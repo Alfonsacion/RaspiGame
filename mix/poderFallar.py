@@ -35,6 +35,12 @@ GPIO.setup(led2_pin, GPIO.OUT)  # Pin del LED 2
 GPIO.setup(led3_pin, GPIO.OUT)  # Pin del LED 3
 GPIO.setup(led4_pin, GPIO.OUT)  # Pin del LED 4
 
+# Apagar todos los LEDs al inicio
+GPIO.output(led1_pin, GPIO.LOW)
+GPIO.output(led2_pin, GPIO.LOW)
+GPIO.output(led3_pin, GPIO.LOW)
+GPIO.output(led4_pin, GPIO.LOW)
+
 # Inicializar el pin GPIO para el boton del buzzer
 button_buzzer = Button(button_buzzer_pin)
 
